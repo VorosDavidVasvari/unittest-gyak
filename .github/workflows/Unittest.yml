@@ -1,6 +1,6 @@
 name: Unittest
 run-name: Unittest
-on: [pull, push]
+on: [push, pull_request]
 jobs:
   Unittest:
     runs-on: ubuntu-latest
