@@ -1,0 +1,13 @@
+name: Unittest
+run-name: Unittest
+on: [push]
+jobs:
+  Unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - name: Run unittest
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
